@@ -1,0 +1,10 @@
+.meal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(144, 3, 3);
+}
+
+.meal-header__title{
+    color: white;
+    padding: 0 5rem;
+}

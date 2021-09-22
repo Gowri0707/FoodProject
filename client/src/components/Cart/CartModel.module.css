@@ -1,0 +1,38 @@
+.cart-modal {
+    width: 40%;
+    min-width: 35rem;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.cart-total label,
+.cart-total p  {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cart-modal__footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-modal__button {
+    margin: 1rem 4px;
+    background: white;
+    border: 1px solid rgb(216, 115, 115);
+    color: rgb(216, 115, 115);
+    border-radius: 16px;
+} 
+
+.cart-modal__button:hover,
+.cart-modal__button:active{
+    background: rgb(155, 4, 4);
+    color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+}

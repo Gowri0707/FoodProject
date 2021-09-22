@@ -1,0 +1,8 @@
+.cart-wrapper {
+    background: white;
+    border-radius: 30px;
+    border: 2px black solid;
+    margin: 5rem auto;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+}
