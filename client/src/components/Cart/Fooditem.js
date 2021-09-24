@@ -30,7 +30,7 @@ const FoodItem = (props) => {
             <div className={classes['food-item__form']}>
                 <div className={classes['food-item__input']}>
                 <label htmlFor="Amount">Amount</label>
-                <input type="number" min="1" value={props.food.quantity} onChange={addAmountHandler} />
+                <input type="text" inputMode="numeric" min="1" value={props.food.quantity} onChange={addAmountHandler} />
                 </div>
                 <Button className={classes['add-button']} type="button" onClick={addItemHandler}>+ Add</Button>
             </div>

@@ -1,3 +1,11 @@
+.meal-background {
+    background: url('../../images/food.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+
 .meal-header {
     display: flex;
     justify-content: space-between;

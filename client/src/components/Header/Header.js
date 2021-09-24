@@ -17,14 +17,14 @@ const Header = (props) => {
     }
 
     return (
-    <>
+    <div className={classes['meal-background']}>
         <div className={classes["meal-header"]}>
             <h2 className={classes["meal-header__title"]}>ReactMeals</h2>
             <Cart onClick={cartClickHandler} />
         </div>
         {cartClicked && <CartModel onClick={cartCloseHandler} />}
         <AboutReactMeal />
-    </>
+    </div>
     );
 }
 export default Header;

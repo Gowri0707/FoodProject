@@ -11,7 +11,7 @@ const CartModel = (props) => {
 
     return(
         <>
-            <div className={classes.backdrop}></div>
+            <div className={classes.backdrop}  onClick={props.onClick}></div>
             <CartWrapper className={classes['cart-modal']}>
                 <div>
                     {cartData.cartItems.map(item => <CartItem key={item.id} cartItem={item} />)}
