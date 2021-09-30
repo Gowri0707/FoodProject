@@ -1,0 +1,38 @@
+.meal-item {
+    flex-direction: column;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.meal-list {
+    background: white;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.hr {
+    color: gray;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+}
+
+.meal-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.meal-price {
+    color: rgb(144, 3, 3);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.meal-description {
+    font-style: italic;
+    margin: 0;
+    padding: 0.5rem 0;
+}

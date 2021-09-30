@@ -7,11 +7,11 @@ import classes from "./CartItem.module.css";
 const CartItem = (props) => {
     const cartData = useContext(CartContext);
     const addQuantityHandler = () => {
-        cartData.addToCart({...props.cartItem, quantity: props.cartItem.quantity + 1});
+        cartData.addToCart(props.cartItem);
     }
 
     const subtractQuantityHandler = () => {
-        cartData.addToCart({...props.cartItem, quantity: props.cartItem.quantity - 1})
+        cartData.removeFromCart(props.cartItem)
     }
 
     return (

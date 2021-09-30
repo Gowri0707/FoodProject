@@ -1,0 +1,13 @@
+.meal-item__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-button {
+    margin: 1rem 0;
+    margin-left: 1.5rem;
+    background: rgb(144, 3, 3);
+    border: 1px black solid;
+    color: white;
+    border-radius: 16px;
+}
