@@ -3,7 +3,8 @@
     min-width: 35rem;
     z-index: 15;
     position: fixed;
-    left: 40vh;
+    right: 10px;
+    left:0;
 }
 
 .cart-total {

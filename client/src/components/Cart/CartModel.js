@@ -7,7 +7,6 @@ import CartItem from "./CartItem";
 
 const CartModel = (props) => {
     const cartData = useContext(CartContext);
-    const totalAmount =cartData.cartItems.map(item => item.price * item.quantity).reduce((a,b) => a+b, 0);
 
     return(
         <>
@@ -18,7 +17,7 @@ const CartModel = (props) => {
                 </div>
                 <div className={classes['cart-total']}>
                     <label>Total Amount</label>
-                    <p>${totalAmount.toFixed(2)}</p>
+                    <p>${cartData.totalAmount.toFixed(2)}</p>
                 </div>
                 <footer className={classes['cart-modal__footer']}>
                     <Button className={classes['cart-modal__button']} onClick={props.onClick}>close</Button>

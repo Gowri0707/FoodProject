@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import CartIcon from "./HeaderCartIcon";
 import CartContext from "../../store/cart-context";
 import classes from "./CartButton.module.css";
 
@@ -9,12 +9,11 @@ const CartButton = (props) => {
   const quantity = cartData.cartItems
     .map((item) => item.quantity)
     .reduce((a, b) => a + b, 0);
-  const style = {  fill: "white", fontSize: "1.5em" }
 
   return (
     <button className={classes["cart-button"]} onClick={props.onClick}>
-      <span>
-        <AiOutlineShoppingCart style={style} />
+      <span className={classes.icon}>
+        <CartIcon />
       </span>
       <span className={classes['cart-button__name']}>Your Cart</span>
       <span className={classes['cart-badge']}>{quantity}</span>
