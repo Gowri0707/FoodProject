@@ -6,10 +6,14 @@
     padding: 0.4rem;
 }
 
-.input__div input {
+.input__div input{
     width: 3rem;
     border-radius: 8px;
     border: 1px gray solid;
     font-size: 1rem;
     padding: 0 8px;
+}
+
+.errorText {
+    color: red;
 }

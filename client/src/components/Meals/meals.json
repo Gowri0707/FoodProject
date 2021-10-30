@@ -1,0 +1,27 @@
+{
+    "meals":[{
+        "id": 1,
+        "name": "Idli",
+        "description": "More sponchy and delicious",
+        "price": "2.99"
+    },
+    {
+        "id": 2,
+        "name": "Chicken Briyani",
+        "description": "Spicy and tasty",
+        "price": "3.99"
+    },
+    {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "description": "Sweet to eat",
+        "price": "2.00"
+    },
+    {
+        "id": 4,
+        "name": "Meals",
+        "description": "Unlimited items to satisfy Lunch",
+        "price": "4.99"
+    }
+    ]
+}

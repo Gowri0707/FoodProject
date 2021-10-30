@@ -2,8 +2,9 @@ import React from "react";
 import classes from './Input.module.css';
 
 const Input = React.forwardRef((props, ref) => {
+  const inputStyle = props.inputStyle ? props.inputStyle : classes['input__div'];
   return (
-    <div className={classes['input__div']}>
+    <div className={inputStyle}>
       <label>{props.label}</label>
       <input
         ref={ref}
@@ -14,7 +15,9 @@ const Input = React.forwardRef((props, ref) => {
         max={props.max}
         defaultValue={props.defaultValue}
         onChange={props.onChange}
+        onBlur={props.onBlur}
       />
+      {props.error && <p className={classes.errorText}>{props.errorText}</p>}
     </div>
   );
 });
